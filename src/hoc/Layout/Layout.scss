@@ -1,0 +1,9 @@
+@import "../../styles//variables";
+
+.Layout{
+    background-color: $portfolio-normal-bg-dark;
+
+    .Night{
+        background-color: $portfolio-night-bg-light;
+    }    
+}

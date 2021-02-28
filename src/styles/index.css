@@ -1,0 +1,11 @@
+.App {
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0px;
+    background-color: #E4E6EB;
+}
+
+.App-Night{
+    background-color: #0D1C51;
+}
+  

@@ -1,0 +1,15 @@
+@import "./variables";
+
+.App{
+    text-align: center;
+    font-family: $portfolio-font;
+    margin: 0px;
+    background-color: $portfolio-normal-bg-dark;
+    color: $portfolio-night-text-color;
+
+    .Night{
+        background-color: $portfolio-night-bg-light;
+        color: #fff
+    }
+
+}
