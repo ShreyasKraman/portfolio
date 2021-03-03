@@ -1,47 +1,47 @@
+@import '../../../styles/variables';
+
 .Aboutme{
     height:100%;
     width:100%;
-    
-}
-
-.bgColor-Night {
-    background-color: #0B1432;
-    color:white;
-}
-
-.bgColor{
-    background-color: #fff;
+    background-color: $portfolio-normal-bg;
     color: #000;
-}
 
-.contain{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin:20px;
-}
-
-.Aboutme h2{
-    display: grid;
-    grid-template-columns: minmax(20px,1fr) auto minmax(20px, 1fr);
-    grid-template-rows: auto;
-    align-items: center;
-    text-align: center;
-    grid-gap:20px;
-    margin: 5%;
-    color: #d9e8ff;
-    padding:20px 20px 10px 20px;
-}
-
-.Aboutme h2:before,
-.Aboutme h2:after{
-    content:'';
-    border-top:2px solid #7ffbff;
-}
-
-@media(min-width:600px){
-
-    .contain{
-        flex-flow: row;
+    .Night {
+        background-color:$portfolio-night-bg;
+        color:white;
     }
+
+    
+    .container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin:20px;
+    }
+    
+    h2{
+        display: grid;
+        grid-template-columns: minmax(20px,1fr) auto minmax(20px, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        text-align: center;
+        grid-gap:20px;
+        margin: 5%;
+        color: #d9e8ff;
+        padding:20px 20px 10px 20px;
+    }
+    
+    h2:before,
+    h2:after{
+        content:'';
+        border-top:2px solid #7ffbff;
+    }
+    
+    @media(min-width:600px){
+    
+        .container{
+            flex-flow: row;
+        }
+    }
+    
 }

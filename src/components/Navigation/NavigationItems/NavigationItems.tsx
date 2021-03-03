@@ -11,13 +11,15 @@ import NavigationItem from './NavigationItem/NavigationItem';
 // import Project from '../../Sections/Feats/Feats';
 // import Contact from '../../Sections/Contact/Contact';
 
-import {faUserCircle} from '@fortawesome/free-solid-svg-icons';
-import {faFolder} from '@fortawesome/free-solid-svg-icons';
-import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons';
-import {faPhone} from '@fortawesome/free-solid-svg-icons';
+// import {faUserCircle} from '@fortawesome/free-solid-svg-icons';
+// import {faFolder} from '@fortawesome/free-solid-svg-icons';
+// import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons';
+// import {faPhone} from '@fortawesome/free-solid-svg-icons';
+
+import {Folder, CalendarToday, Phone, AccountCircle} from '@material-ui/icons'
+
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import FormCheck from 'react-bootstrap/FormCheck';
 
@@ -28,28 +30,28 @@ const NavigationItems = (props : INavigationItem) =>{
             link:"AboutMe",
             desc:"About Me",
             component:"AboutMe",
-            icon:faUserCircle,
+            icon:<AccountCircle/>,
             active:true,
         },
         {
             link:"Timeline",
-            desc:"My Timeline",
+            desc:"Timeline",
             component:"Timeline",
-            icon:faCalendarAlt,
+            icon:<CalendarToday/>,
             active:false,
         },
         {
             link:"Projects",
             desc:"Projects",
             component:"Project",
-            icon:faFolder,
+            icon:<Folder/>,
             active:false,
         },
         {
             link:"Contact",
             desc:"Contact",
             component:"Contact",
-            icon: faPhone,
+            icon: <Phone/>,
             active:false,
         }
     ];
@@ -61,7 +63,8 @@ const NavigationItems = (props : INavigationItem) =>{
                                                 link={value.link} 
                                                 active
                                                 close={props.close} 
-                                                icon={value.icon}>
+                                                icon={value.icon}
+                                                text={value.desc}>
                                                 {/* component={value.component}> */}
                                                 {value.desc}</NavigationItem>
                                         :
@@ -70,7 +73,8 @@ const NavigationItems = (props : INavigationItem) =>{
                                                 link={value.link}
                                                 active 
                                                 close={props.close}
-                                                icon={value.icon}>
+                                                icon={value.icon}
+                                                text={value.desc}>
                                                 {/* component={value.component}> */}
                                                 {value.desc}</NavigationItem>
             
@@ -82,7 +86,8 @@ const NavigationItems = (props : INavigationItem) =>{
                                                 key={idx} 
                                                 link={value.link} 
                                                 active 
-                                                icon={value.icon}>
+                                                icon={value.icon}
+                                                text={value.desc}>
                                                 {/*component={value.component}> */}
                                                 {value.desc}</NavigationItem>
                                         :
@@ -90,7 +95,8 @@ const NavigationItems = (props : INavigationItem) =>{
                                                 key={idx} 
                                                 link={value.link} 
                                                 active 
-                                                icon={value.icon}>
+                                                icon={value.icon}
+                                                text={value.desc}>
                                                 {/* component={value.component}> */}
                                                 {value.desc}</NavigationItem>
         return navigation
@@ -101,14 +107,14 @@ const NavigationItems = (props : INavigationItem) =>{
         <>
             <ul className="NavigationItems">
                 {navigationitems}
-                <li className='NavigationItem'>
+                {/* <li className='NavigationItem'>
                     <FormCheck 
                         type="switch"
                         id="night-mode-switch"
                         label="Night Mode"
                         onClick={props.switch}
                     />
-                </li>
+                </li> */}
             </ul>
         </>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import {BackdropType} from '../../../common-types/index';
-import './Backdrop.css';
+import './Backdrop.scss';
 
 const Backdrop = (props : BackdropType) => {
     return(

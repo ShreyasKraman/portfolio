@@ -1,4 +1,4 @@
-import {faReact, faJava, faVuejs, faGithub, faNodeJs, faAws, faDocker,
+import {faReact, faJava, faGithub, faNodeJs, faAws, faDocker,
     } from '@fortawesome/free-brands-svg-icons'
 
 import Vmware from '../../../../src/assets/vmware.png';

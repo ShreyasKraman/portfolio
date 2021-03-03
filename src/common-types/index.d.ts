@@ -8,6 +8,7 @@ type INavigationItem = {
     active?: boolean,
     close?: () => void,
     switch?: () => void,
+    text?: string,
     children?: React.ReactNode    
 }
 

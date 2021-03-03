@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Introduction from '../../components/Sections/Introduction/Introduction';
-import AboutMe from '../../components/Sections/AboutMe/aboutMe';
+import AboutMe from '../../components/Sections/AboutMe/AboutMe';
 import Timeline from '../../components/Sections/Timeline/timeline';
 import Contact from '../../components/Sections/Contact/contact';
 
-import './Portfolio.css';
+import './Portfolio.scss';
 
 const Portfolio = (props : { nightMode: boolean }) => (
     <div className='Portfolio' >
