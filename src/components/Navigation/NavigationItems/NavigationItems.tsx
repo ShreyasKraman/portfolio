@@ -1,10 +1,11 @@
 import React from 'react';
 
-import './NavigationItems.css';
+import './NavigationItems.scss';
 import './NavigationItem/NavigationItem.css';
 
 import {INavigationItem} from '../../../common-types/index';
 import NavigationItem from './NavigationItem/NavigationItem';
+
 
 // import AboutMe from '../../Sections/Aboutme/Aboutme';
 // import Timeline from '../../Sections/Timeline/Events';
@@ -104,7 +105,7 @@ const NavigationItems = (props : INavigationItem) =>{
     }); 
 
     return (
-        <>
+        <>  
             <ul className="NavigationItems">
                 {navigationitems}
                 {/* <li className='NavigationItem'>
