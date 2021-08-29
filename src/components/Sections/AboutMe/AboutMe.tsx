@@ -1,6 +1,6 @@
 import React from "react"
 
-import ProfilePic from "./Profilepic/Profilepic"
+import ProfilePic from "./ProfilePic/ProfilePic"
 import Summary from "./Summary/Summary"
 import Grid from "@material-ui/core/Grid"
 import "./AboutMe.scss"
