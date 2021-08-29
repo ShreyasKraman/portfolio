@@ -1,11 +1,29 @@
+@import '../../../styles/variables';
+
 .NavigationItems{
-    margin: 0px;
+    // margin: 1rem 0;
     padding: 0;
-    list-style:none;
-    display: flex;
-    flex-flow:column;
-    text-align: left;
-    height:100%;
+    color: $portfolio-normal-text-color;
+    
+    .ListItem{
+        list-style:none;
+        display: flex;
+        flex-flow:column;
+        text-align: left;
+        height:100%;
+        
+    }
+
+    .Night{
+        color: $portfolio-night-text-color;
+    }
+
+    @media only screen and (min-width: 600px){
+        .ListItem{
+            flex-flow:row;
+            float:right;
+        }
+    }
 }
 
 @media only screen and (max-width: 599px){
@@ -14,9 +32,3 @@
     }
 }
 
-@media only screen and (min-width: 600px){
-    .NavigationItems{
-        flex-flow:row;
-        float:right;
-    }
-}

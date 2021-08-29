@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './NavigationItems.scss';
-import './NavigationItem/NavigationItem.css';
+import './NavigationItem/NavigationItem.scss';
 
 import {INavigationItem} from '../../../common-types/index';
 import NavigationItem from './NavigationItem/NavigationItem';
@@ -54,70 +54,30 @@ const NavigationItems = (props : INavigationItem) =>{
             component:"Contact",
             icon: <Phone/>,
             active:false,
-        }
+        },
     ];
 
     const navigationitems = links.map((value,idx) => {
-        if(props.close){
-            let navigation = value.active ? <NavigationItem 
-                                                key={idx} 
-                                                link={value.link} 
-                                                active
-                                                close={props.close} 
-                                                icon={value.icon}
-                                                text={value.desc}>
-                                                {/* component={value.component}> */}
-                                                {value.desc}</NavigationItem>
-                                        :
-                                        <NavigationItem 
-                                                key={idx} 
-                                                link={value.link}
-                                                active 
-                                                close={props.close}
-                                                icon={value.icon}
-                                                text={value.desc}>
-                                                {/* component={value.component}> */}
-                                                {value.desc}</NavigationItem>
-            
-            return navigation
-    
-        }
 
-        let navigation = value.active ? <NavigationItem 
-                                                key={idx} 
-                                                link={value.link} 
-                                                active 
-                                                icon={value.icon}
-                                                text={value.desc}>
-                                                {/*component={value.component}> */}
-                                                {value.desc}</NavigationItem>
-                                        :
-                                        <NavigationItem 
-                                                key={idx} 
-                                                link={value.link} 
-                                                active 
-                                                icon={value.icon}
-                                                text={value.desc}>
-                                                {/* component={value.component}> */}
-                                                {value.desc}</NavigationItem>
-        return navigation
-        
+        return <NavigationItem 
+                    key={idx} 
+                    link={value.link} 
+                    active 
+                    icon={value.icon}
+                    text={value.desc}
+                    nightMode={props.nightMode}>
+                    {/*component={value.component}> */}
+                    {value.desc}</NavigationItem>
     }); 
 
     return (
-        <>  
-            <ul className="NavigationItems">
-                {navigationitems}
-                {/* <li className='NavigationItem'>
-                    <FormCheck 
-                        type="switch"
-                        id="night-mode-switch"
-                        label="Night Mode"
-                        onClick={props.switch}
-                    />
-                </li> */}
-            </ul>
-        </>
+        <div className="NavigationItems">
+            {/* <div className={props.nightMode?"Night":''}>   */}
+                <span className="ListItem">
+                    {navigationitems}
+                </span>
+            {/* </div> */}
+        </div>
     );
 };
 

@@ -11,7 +11,7 @@ import './Layout.scss';
 
 
 
-const Layout = (props : {switch : () => void, children : React.ReactNode}) => {
+const Layout = (props : {switch: (event:React.ChangeEvent<HTMLInputElement>, checked:boolean)=>void, nightMode: boolean, children : React.ReactNode}) => {
 
     const [showSideDrawer, setShowSideDrawer] = useState(false);
 
@@ -25,7 +25,7 @@ const Layout = (props : {switch : () => void, children : React.ReactNode}) => {
 
     return(
         <>
-            <Toolbar open={openSideDrawerHandler} switch={props.switch}/>
+            <Toolbar nightMode={props.nightMode} open={openSideDrawerHandler} switch={props.switch}/>
             {/* {sidedrawer} */}
             <Sidedrawer open={showSideDrawer} close={closeSideDrawerHandler}/>
             <main>

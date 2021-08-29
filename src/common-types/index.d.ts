@@ -5,16 +5,16 @@ import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 type INavigationItem = {
     icon?: IconDefinition,
     link?: string,
-    active?: boolean,
-    close?: () => void,
-    switch?: () => void,
     text?: string,
-    children?: React.ReactNode    
+    nightMode: boolean,
+    children?: React.ReactNode,
+    switch: (event:React.ChangeEvent<HTMLInputElement>, checked:boolean)=>void,    
 }
 
 type ToolbarType = {
     open: () => void,
-    switch: () => void,
+    switch: (event:React.ChangeEvent<HTMLInputElement>, checked:boolean)=>void,
+    nightMode: boolean
 }
 
 type BackdropType = {

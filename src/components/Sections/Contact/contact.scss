@@ -6,7 +6,7 @@
     background: $portfolio-normal-bg;
     color:$portfolio-normal-text-color;
 
-    .Night{
+    &.Night{
         background: $portfolio-night-bg;
         color: #fff;
     }

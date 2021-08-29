@@ -6,7 +6,7 @@ import {timeline} from '../../../../constants/data/Timeline/Timeline';
 import './timeline.scss';
 
 const Timeline = (props : {nightMode: boolean}) => (
-    <Slide right>
+    // <Slide right>
         <div className={props.nightMode?'Timeline Night':'Timeline'} id='Timeline'>
             <h2>Timeline</h2>
             <div className="Events">
@@ -28,7 +28,7 @@ const Timeline = (props : {nightMode: boolean}) => (
                 })}
             </div>
         </div>
-    </Slide>
+    // </Slide>
 )
 
 export default Timeline;

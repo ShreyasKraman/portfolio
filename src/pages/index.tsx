@@ -6,20 +6,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../styles/index.scss'
 
+import Container from '@material-ui/core/Container';
+
 const App = () => {
 
   const [layoutNight, setLayoutNight] = useState(true);
 
-  const toggleNightSwitch = () => {
+  const toggleNightSwitch = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLayoutNight(!layoutNight);
   }
 
   return(
-    <div className={layoutNight ? 'App Night' : 'App'}>
-      <Layout switch={toggleNightSwitch}>
-        <Portfolio nightMode={layoutNight}/>
-      </Layout>
-    </div>
+    <Container maxWidth={false} style={{padding:0}}>
+      <div className={layoutNight ? 'App Night' : 'App'}>
+        <Layout nightMode={layoutNight} switch={toggleNightSwitch}>
+          <Portfolio nightMode={layoutNight}/>
+        </Layout>
+      </div>
+    </Container>
   )
 };
 

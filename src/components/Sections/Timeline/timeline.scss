@@ -4,9 +4,10 @@
     width:100%;
     height:100%;
     background-color:$portfolio-normal-bg;
+    color:$portfolio-normal-text-color;
     margin: 0px 0px 20px 0px;
 
-    .Night{
+    &.Night{
         background-color:$portfolio-night-bg;
     }
 

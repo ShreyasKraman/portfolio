@@ -5,10 +5,13 @@ import Fade from 'react-reveal/Fade';
 import './Introduction.scss';
 import {introduction} from '../../../../constants/data/Introduction/Introduction';
 
+
+
+
 const Intrduction = ( props : {nightMode: boolean} ) => (
-    <div className={ props.nightMode ? 'Introduction Night' : 'Introduction bgColor' }>
-        <Fade top cascade>
-            <div className={props.nightMode ? 'Pitch Pitch-bg-Night' : 'Pitch Pitch-bg'}>
+    <div className={'Introduction bgColor' }>
+        {/* <Fade top cascade> */}
+            <div className={props.nightMode ? 'Pitch Night' : 'Pitch'}>
                 <h5>{introduction.heading1}</h5> 
                 <h2>{introduction.heading2}</h2>
                 <h3>{introduction.heading3}</h3>
@@ -27,7 +30,7 @@ const Intrduction = ( props : {nightMode: boolean} ) => (
                     </div>
                 </div>
             </div>
-        </Fade>
+        {/* </Fade> */}
     </div>
 );
 
