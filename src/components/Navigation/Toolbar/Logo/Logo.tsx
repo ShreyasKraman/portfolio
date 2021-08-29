@@ -2,7 +2,7 @@ import React from "react"
 
 import LogoImage from "../../../../assets/Logo.png"
 
-import "./logo.css"
+import "./Logo.css"
 
 const Logo = () => (
   <div className="Logo">

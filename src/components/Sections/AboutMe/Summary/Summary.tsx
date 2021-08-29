@@ -13,7 +13,7 @@ import {
   expertise,
   handsOn,
 } from "../../../../../constants/data/AboutMe/Summary/Summary"
-import IconGrid from "./IconGrid/iconGrid"
+import IconGrid from "./IconGrid/IconGrid"
 
 const Summary = (props: { nightMode: boolean }) => (
   <div className={"Summary"}>

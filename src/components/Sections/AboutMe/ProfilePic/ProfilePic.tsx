@@ -3,7 +3,7 @@ import React from "react"
 import Mypic from "../../../../assets/profilePic.jpg"
 
 import Image from "react-bootstrap/Image"
-import "./profilePic.scss"
+import "./ProfilePic.scss"
 
 const Profilepic = () => {
   return (

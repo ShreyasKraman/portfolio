@@ -3,7 +3,7 @@ import React from "react"
 import Slide from "react-reveal/Slide"
 
 import { timeline } from "../../../../constants/data/Timeline/Timeline"
-import "./timeline.scss"
+import "./Timeline.scss"
 
 const Timeline = (props: { nightMode: boolean }) => (
   // <Slide right>

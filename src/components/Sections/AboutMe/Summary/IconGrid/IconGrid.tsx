@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Icon from "../Icon/icon"
+import Icon from "../Icon/Icon"
 import React from "react"
 import { IconProp } from "@fortawesome/fontawesome-svg-core"
 

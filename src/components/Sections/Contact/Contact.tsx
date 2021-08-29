@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-import "./contact.scss"
+import "./Contact.scss"
 
 const contact = (props: { nightMode: boolean }) => (
   <div className={props.nightMode ? "Contact Night" : "Contact"} id="Contact">
