@@ -1,30 +1,29 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 
-import Layout from '../hoc/Layout/Layout'
-import Portfolio from '../container/Portfolio/Portfolio';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Layout from "../hoc/Layout/Layout"
+import Portfolio from "../container/Portfolio/Portfolio"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-import '../styles/index.scss'
+import "../styles/index.scss"
 
-import Container from '@material-ui/core/Container';
+import Container from "@material-ui/core/Container"
 
 const App = () => {
-
-  const [layoutNight, setLayoutNight] = useState(true);
+  const [layoutNight, setLayoutNight] = useState(true)
 
   const toggleNightSwitch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setLayoutNight(!layoutNight);
+    setLayoutNight(!layoutNight)
   }
 
-  return(
-    <Container maxWidth={false} style={{padding:0}}>
-      <div className={layoutNight ? 'App Night' : 'App'}>
+  return (
+    <Container maxWidth={false} style={{ padding: 0 }}>
+      <div className={layoutNight ? "App Night" : "App"}>
         <Layout nightMode={layoutNight} switch={toggleNightSwitch}>
-          <Portfolio nightMode={layoutNight}/>
+          <Portfolio nightMode={layoutNight} />
         </Layout>
       </div>
     </Container>
   )
-};
+}
 
-export default App;
+export default App

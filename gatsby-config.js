@@ -15,6 +15,6 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
 }
