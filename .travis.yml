@@ -12,5 +12,19 @@ jobs:
   include:
     - stage: test
       script: npm run test
-    # - stage: build
-    #   script: npm run build
+    - stage: build 
+      if: branch = master
+      script: npm run build
+    - stage: deploy
+      if: branch = master
+      name: "Deploy to github pages"
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        local_dir: public
+        github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep_history: true
+        target_branch: gh-pages
+        on:
+          branch: master
+
