@@ -8,7 +8,7 @@ import Contact from "../../components/Sections/Contact/Contact"
 import "./Portfolio.scss"
 
 const Portfolio = (props: { nightMode: boolean }) => (
-  <div className="Portfolio">
+  <div className="Portfolio" data-testid="portfolio-container" >
     <Introduction nightMode={props.nightMode} />
     <AboutMe nightMode={props.nightMode} />
     <Timeline nightMode={props.nightMode} />
