@@ -71,7 +71,7 @@ const NavigationItems = (props: INavigationItem) => {
   })
 
   return (
-    <div className="NavigationItems">
+    <div className="NavigationItems" data-testid="navigation-items-container">
       {/* <div className={props.nightMode?"Night":''}>   */}
       <span className="ListItem">{navigationitems}</span>
       {/* </div> */}
