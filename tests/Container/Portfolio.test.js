@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {render} from '@testing-library/react'
-import Portfolio from '../src/container/Portfolio/Portfolio'; 
+import Portfolio from '../../src/container/Portfolio/Portfolio'; 
 
 
 describe('Porfolio component tests',() => {
